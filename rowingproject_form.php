@@ -1,3 +1,15 @@
+<?php
+
+if($_POST["message"]) {
+
+mail("rujul@mit.edu", "Inquiry from Rowing Website",
+
+$_POST["insert your message here"]. "From: an@email.address");
+
+}
+
+?>
+
 <!DOCTYPE HTML>
 <!--
 	Forty by HTML5 UP
@@ -126,7 +138,7 @@
 					<section id="contact">
 						<div class="inner">
 							<section>
-								<form method="post" action="#">
+								<form method="post" action="rowingproject_form.php">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
