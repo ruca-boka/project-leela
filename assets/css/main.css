@@ -1769,6 +1769,22 @@ input, select, textarea {
 		text-align: center;
 	}
 
+	section.style1{
+		padding: 2.5em 2.5em 2.5em 2.5em;
+		/*background-color: #3E73AE;*/
+		background-color: #071530;
+		/*color: #0D2A59;*/
+	}
+
+	/*section.style1 > :first-child{
+		color: #0D2A59;
+	}*/
+
+	section.style2{
+		padding: 2.5em 2.5em 2.5em 2.5em;
+		background-color: #283443;
+	}
+
 	header.major {
 		width: -moz-max-content;
 		width: -webkit-max-content;
@@ -1797,6 +1813,12 @@ input, select, textarea {
 			letter-spacing: 0.25em;
 			margin-bottom: 0;
 			text-transform: uppercase;
+		}
+
+		header.major > h1 {
+			font-weight: 600;
+			letter-spacing: 0.25em;
+			margin-bottom: 0;
 		}
 
 		body.is-ie header.major > :first-child:after {
@@ -2231,7 +2253,8 @@ input, select, textarea {
 		}
 
 	ul {
-		list-style: disc;
+		list-style-type: none;
+		/*list-style: disc;*/
 		margin: 0 0 2em 0;
 		padding-left: 1em;
 	}
@@ -2835,11 +2858,11 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(6n - 4):before {
-				background-color: #936B69;
+				background-color: #283443;
 			}
 
 			.tiles article:nth-child(6n - 3):before {
-				background-color: #936B69;
+				background-color: #283443;
 			}
 
 			.tiles article:nth-child(6n - 2):before {
@@ -3380,7 +3403,7 @@ input, select, textarea {
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		background-image: url("../../images/header_background1.jpg");
+		/*background-image: url("../../images/header_background1.jpg");*/
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3423,7 +3446,7 @@ input, select, textarea {
 		}
 
 		#banner h1 {
-			font-size: 3.25em;
+			font-size: 4.25em; /*Toggled*/
 		}
 
 		#banner > .inner {
@@ -3484,11 +3507,18 @@ input, select, textarea {
 			height: 75vh;
 			min-height: 30em;
 			max-height: 50em;
+			background-image: url("../../images/header_background1.jpg");
 		}
 
 			#banner.major.alt {
 				opacity: 0.75;
 			}
+
+		#banner.minor{
+			height: 75vh;
+			min-height: 10em;
+			max-height: 30em;
+		}
 
 		#banner.style1:after {
 			background-color: #26202A;
